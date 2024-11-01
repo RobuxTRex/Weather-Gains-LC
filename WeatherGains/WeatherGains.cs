@@ -23,12 +23,6 @@ public class WeatherGains : BaseUnityPlugin
 
         BoundConfig = new ModConfiguration(base.Config);
         
-        if (!BoundConfig.Enabled.Value)
-        {
-            Logger.LogWarning($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} is disabled! If this is in error, please refer to the mod's configuration files.");
-            return;
-        }
-        
         Patch();
 
         Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} has loaded!");
