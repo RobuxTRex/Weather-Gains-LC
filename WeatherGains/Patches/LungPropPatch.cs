@@ -1,3 +1,5 @@
+// WeatherGains © 2025 RobuxTRex/SulphurDev
+// AGPL-3.0-or-later – https://www.gnu.org/licenses/agpl-3.0.html
 using HarmonyLib;
 
 namespace WeatherGains.Patches;
@@ -9,7 +11,9 @@ public class LungPropPatch
     [HarmonyPrefix]
     private static void DisconnectFromMachineryPatch(LungProp __instance)
     {
-        if (!WeatherGains.BoundConfig.LungValueMultiEnabled.Value) return;
-        __instance.SetScrapValue((int)(__instance.scrapValue*WeatherGains.BoundConfig.Multipliers[TimeOfDay.Instance.currentLevelWeather].ValueMultiplier.Value));
+        if (!WeatherGains.BoundConfig.LungValueMultiEnabled.Value) return; // Return if lung multi isn't enabled
+        
+        // Apply the multiplier to the scrap value
+        __instance.SetScrapValue(MultiplierManager.ApplyValueMultiplier(__instance.scrapValue));
     }
 }

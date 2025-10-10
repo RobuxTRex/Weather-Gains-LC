@@ -1,50 +1,49 @@
-using BepInEx;
-using BepInEx.Logging;
+// WeatherGains © 2025 RobuxTRex/SulphurDev
+// AGPL-3.0-or-later – https://www.gnu.org/licenses/agpl-3.0.html
 using HarmonyLib;
+
+using BepInEx.Logging;
+using BepInEx;
 
 namespace WeatherGains;
 
-[BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
+[BepInPlugin(PluginInfo.GUID, PluginInfo.NAME, PluginInfo.VERSION)]
 public class WeatherGains : BaseUnityPlugin
 {
-    
-    internal static ModConfiguration BoundConfig { get; private set; } = null!;
-    
-    public static WeatherGains Instance { get; private set; } = null!;
-    internal new static ManualLogSource Logger { get; private set; } = null!;
-    internal static Harmony? Harmony { get; set; }
+    internal static PluginConfig BoundConfig { get; private set; } = null!; 
+    private new static ManualLogSource Logger { get; set; } = null!;
+    private static Harmony Harmony { get; set; } = null!;
 
     private void Awake()
     {
+        BoundConfig = new PluginConfig(base.Config);
         Logger = base.Logger;
-        Instance = this;
         
-        Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} is loading...");
-
-        BoundConfig = new ModConfiguration(base.Config);
+        if (!BoundConfig.PluginEnabled.Value)
+        {
+            Logger.LogWarning($"{PluginInfo.NAME} v{PluginInfo.VERSION} is disabled! If this is not intentional, please enable it in the config file.");
+            return;
+        }
         
-        Patch();
-
-        Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} has loaded!");
+        Logger.LogInfo($"{PluginInfo.NAME} v{PluginInfo.VERSION} is loading...");
+        ApplyPatches();
+        Logger.LogInfo($"{PluginInfo.NAME} v{PluginInfo.VERSION} has loaded!");
     }
 
-    internal static void Patch()
+    private static void ApplyPatches()
     {
-        Harmony ??= new Harmony(MyPluginInfo.PLUGIN_GUID);
-
-        Logger.LogDebug("Patching...");
-
+        Harmony ??= new Harmony(PluginInfo.GUID);
+        Logger.LogDebug("Applying patches...");
         Harmony.PatchAll();
-
-        Logger.LogDebug("Finished patching!");
+        Logger.LogDebug("Successfully applied all patches!");
     }
-
-    internal static void Unpatch()
+    
+    internal static void RemovePatches()
     {
-        Logger.LogDebug("Unpatching...");
-
-        Harmony?.UnpatchSelf();
-
-        Logger.LogDebug("Finished unpatching!");
+        if (Harmony is null) return;
+        Logger.LogDebug("Removing patches...");
+        Harmony.UnpatchAll(Harmony.Id);
+        Logger.LogDebug("Successfully removed all patches!");
+        Harmony = null;
     }
 }

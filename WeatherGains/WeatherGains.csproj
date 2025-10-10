@@ -1,55 +1,34 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
 
-    <!-- BepInEx Properties -->
-    <PropertyGroup>
-        <AssemblyName>robuxtrex.weathergains</AssemblyName>
-        <Product>WeatherGains</Product>
-        <!-- Change to whatever version you're currently on. -->
-        <Version>1.0.0</Version>
-    </PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WeatherGains</RootNamespace>
+    <AssemblyName>WeatherGains</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>disable</Nullable>
 
-    <!-- Project Properties -->
-    <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
-        <RootNamespace>WeatherGains</RootNamespace>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <LangVersion>latest</LangVersion>
-    </PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseOutputPath>bin\</BaseOutputPath>
+  </PropertyGroup>
 
-    <!-- Enable Nullable for better IDE null-checking -->
-    <PropertyGroup>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <Optimize>false</Optimize>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
 
-    <!-- Set NuGet Sources -->
-    <PropertyGroup>
-        <RestoreAdditionalProjectSources>
-            https://api.nuget.org/v3/index.json;
-            https://nuget.bepinex.dev/v3/index.json
-        </RestoreAdditionalProjectSources>
-    </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
 
-    <!-- Embed Debug Symbols for Easier Debugging -->
-    <PropertyGroup>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>embedded</DebugType>
-        <!--
-        Trim the project path to prevent players from potentially
-        viewing Private Information in stack traces.
-        -->
-        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./</PathMap>
-    </PropertyGroup>
-
-    <!-- Primary Package References -->
-    <ItemGroup>
-        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
-        <PackageReference Include="BepInEx.Core" Version="5.*" PrivateAssets="all"/>
-        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" PrivateAssets="all"/>
-        <PackageReference Include="LethalCompany.GameLibs.Steam" Version="*-*" PrivateAssets="all"/>
-        <PackageReference Include="UnityEngine.Modules" Version="2022.3.9" IncludeAssets="compile" PrivateAssets="all"/>
-    </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
-        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all"/>
-    </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Assembly-CSharp.dll" />
+    <Reference Include="BepInEx" HintPath="D:\Lethal Company\Lethal Company Dev v73\BepInEx\core\BepInEx.dll" />
+    <Reference Include="UnityEngine" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll" />
+  </ItemGroup>
 </Project>
