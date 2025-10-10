@@ -30,5 +30,10 @@
     <Reference Include="BepInEx" HintPath="D:\Lethal Company\Lethal Company Dev v73\BepInEx\core\BepInEx.dll" />
     <Reference Include="UnityEngine" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.dll" />
     <Reference Include="UnityEngine.CoreModule" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll" />
+    <Reference Include="Unity.Netcode.Runtime" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.1" />
   </ItemGroup>
 </Project>

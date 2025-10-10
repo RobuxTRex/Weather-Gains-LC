@@ -25,4 +25,5 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="D:\Lethal Company\Lethal Company Dev v73\BepInEx\core\BepInEx.dll" /&gt;&#xD;
   &lt;Assembly Path="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Assembly-CSharp.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ac9d221-3562-4800-a1d9-eed7fb06720a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CLA.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeatherGains.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/ModConfiguration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/Patches/LungPropPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains/Patches/LungPropPatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/Patches/RoundManagerPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains/Patches/RoundManagerPatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/SyncedInstance.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/Types/MultiValueGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains/Types/MultiValueGroup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherGains/WeatherGains.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains/WeatherGains.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherGains/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherGains.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherGains/WeatherGains.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherGains/WeatherGains.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,6 +115,8 @@
       <workItem from="1760040718701" duration="969000" />
       <workItem from="1760041760767" duration="1267000" />
       <workItem from="1760124311857" duration="3332000" />
+      <workItem from="1760129125671" duration="193000" />
+      <workItem from="1760129337830" duration="87000" />
     </task>
     <servers />
   </component>
