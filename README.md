@@ -2,14 +2,6 @@
 ![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/RobuxTRex/Weather_Gains?style=for-the-badge&logo=thunderstore&logoColor=white)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/RobuxTRex/Weather-Gains-LC?style=for-the-badge&logo=semanticrelease&logoColor=white&color=brightgreen)
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/RobuxTRex/Weather-Gains-LC/main?style=for-the-badge&logo=codefactor&logoColor=white&color=blueviolet)](https://www.codefactor.io/repository/github/robuxtrex/weather-gains-lc)
-![GitHub last commit](https://img.shields.io/github/last-commit/RobuxTRex/Weather-Gains-LC?style=for-the-badge&logo=git&logoColor=white&color=orange)
-![GitHub Repo stars](https://img.shields.io/github/stars/RobuxTRex/Weather-Gains-LC?style=for-the-badge&logo=github&color=yellow)
-
-![Contributions welcome](https://img.shields.io/badge/Contributions-welcome-blueviolet?style=for-the-badge&logo=github)
-![AGPL License](https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge&logo=gnu&logoColor=white)
-![CLA Required](https://img.shields.io/badge/CLA-Signed%20Required-critical?style=for-the-badge&logo=readthedocs&logoColor=white)
-
 # Weather Gains
 Weather Gains is a highly-configurable BepInEx mod for Lethal Company that increases the value and spawn frequency of scrap based on the current weather.
 
@@ -44,3 +36,11 @@ Versions `v2.0.0` and above are licensed under the [AGPL v3 or later license](./
 Versions `v1.x.x` were licensed under the [GPL v3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 The [CLA](./CLA.md) applies to **all** contributions to Weather Gains from `v2.0.0`, and it **must** be signed before code is submitted.
+
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/RobuxTRex/Weather-Gains-LC/main?style=for-the-badge&logo=codefactor&logoColor=white&color=blueviolet)](https://www.codefactor.io/repository/github/robuxtrex/weather-gains-lc)
+![GitHub last commit](https://img.shields.io/github/last-commit/RobuxTRex/Weather-Gains-LC?style=for-the-badge&logo=git&logoColor=white&color=orange)
+![GitHub Repo stars](https://img.shields.io/github/stars/RobuxTRex/Weather-Gains-LC?style=for-the-badge&logo=github&color=yellow)
+
+![Contributions welcome](https://img.shields.io/badge/Contributions-welcome-blueviolet?style=for-the-badge&logo=github)
+![AGPL License](https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge&logo=gnu&logoColor=white)
+![CLA Required](https://img.shields.io/badge/CLA-Signed%20Required-critical?style=for-the-badge&logo=readthedocs&logoColor=white)

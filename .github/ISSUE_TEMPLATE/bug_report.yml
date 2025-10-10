@@ -1,0 +1,84 @@
+name: Bug Report
+description: File a bug report for Weather Gains
+title: "[BUG] "
+labels: ["bug"]
+assignees: ["RobuxTRex"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to file a bug report for **Weather Gains**!
+        Please fill out the template below with as much detail as possible so we can address the issue.
+        Ensure that you attach your config file to the issue if applicable.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue that you have experienced.
+      placeholder: e.g. "Scrap value multiplier isn't applied on eclipsed weather!"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we reproduce this?
+      description: Please provide a step-by-step list of what you did to encounter the issue.
+      placeholder: |
+        1. Open the game with Weather Gains installed
+        2. Land on a map (in my case, Assurance) with Eclipsed weather
+        3. Locate a bee hive
+        4. Observe that the scrap value multiplier is not applied
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Describe what you expected to happen instead of the issue.
+      placeholder: e.g. "Bee hive should have the x1.7 multiplier applied!"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Weather Gains Version
+      description: Please provide the version of Weather Gains you are using.
+      placeholder: e.g. "v2.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Lethal Company Version
+      description: Please provide the version of Lethal Company you are using.
+      placeholder: e.g. "v73"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: If applicable, please provide any error messages or logs that were generated when the issue occurred. These can be found in the BepInEx console.
+      placeholder: |
+        ```
+        [Error] Something went wrong!
+        ```
+  - type: markdown
+    attributes:
+      value: "---"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting, you agree to follow the [Code of Conduct](https://github.com/RobuxTRex/Weather-Gains-LC/blob/main/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true
