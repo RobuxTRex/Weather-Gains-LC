@@ -81,6 +81,7 @@ public class PluginConfig
             false,
             "Disables all transpilers for compatibility with other mods. This will prevent multipliers from being applied to bee hives."
         );
+        
         PluginEnabled = config.Bind(
             SectionGeneral,
             "PluginEnabled",

@@ -26,11 +26,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Assembly-CSharp" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Assembly-CSharp.dll" />
-    <Reference Include="BepInEx" HintPath="D:\Lethal Company\Lethal Company Dev v73\BepInEx\core\BepInEx.dll" />
-    <Reference Include="UnityEngine" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.dll" />
-    <Reference Include="UnityEngine.CoreModule" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll" />
-    <Reference Include="Unity.Netcode.Runtime" HintPath="D:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll" />
+    <Reference Include="Assembly-CSharp" HintPath="J:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Assembly-CSharp.dll" />
+    <Reference Include="BepInEx" HintPath="J:\Lethal Company\Lethal Company Dev v73\BepInEx\core\BepInEx.dll" />
+    <Reference Include="UnityEngine" HintPath="J:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="J:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\UnityEngine.CoreModule.dll" />
+    <Reference Include="Unity.Netcode.Runtime" HintPath="J:\Lethal Company\Lethal Company Dev v73\Lethal Company_Data\Managed\Unity.Netcode.Runtime.dll" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,5 +6,5 @@ internal static class PluginInfo
 {
     public const string GUID = "uk.co.sulphurdev.weathergains";
     public const string NAME = "Weather Gains";
-    public const string VERSION = "2.0.0";
+    public const string VERSION = "2.0.1";
 }

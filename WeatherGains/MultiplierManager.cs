@@ -24,7 +24,7 @@ public static class MultiplierManager
         }
         
         // Apply the multiplier to the scrap value
-        var newValue = (int) Mathf.Max(initialValue * valueMultiplier, 1f); // Ensure at least 1 scrap value
+        var newValue = (int) (initialValue * valueMultiplier);
         return newValue;
     }
     
@@ -36,7 +36,7 @@ public static class MultiplierManager
         var amountMultiplier = GetMultiplierGroupForCurrentWeather().AmountMultiplier.Value;
         
         // Apply the multiplier to the scrap amount
-        var newAmount = Mathf.Max(initialAmount * amountMultiplier, 1f); // Ensure at least 1 scrap is dropped
+        var newAmount = initialAmount * amountMultiplier;
         return newAmount;
     }
     
