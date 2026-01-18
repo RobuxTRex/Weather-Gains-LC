@@ -11,6 +11,7 @@ If you discover a security vulnerability in WeatherGains (such as an exploit, da
 
 Instead, report it privately through one of the following channels:
 - **Email**: [codesecurity@sulphurdev.co.uk](mailto:codesecurity@sulphurdev.co.uk)
+- GitHub Security Advisories
 
 When reporting, please include the following:
 - A clear and detailed description of the vulnerability; don't leave out any details.
